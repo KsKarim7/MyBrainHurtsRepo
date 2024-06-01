@@ -1,4 +1,14 @@
-    for (int i = 0; i < n; i++)
+    int count = 0;
+    while (true)
     {
-        cout << arr[i] << endl;
+        if (f % 10 == 0)
+        {
+            count++;
+            f /= 10;
+        }
+        else
+        {
+            break;
+        }
     }
+    cout << count << endl;
