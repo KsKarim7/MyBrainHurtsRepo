@@ -10,3 +10,5 @@ for i in range(inp):
         print("YES")
     else:
         print("NO")
+
+
