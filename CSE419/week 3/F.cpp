@@ -2,45 +2,28 @@
 using namespace std;
 int main()
 {
-    int t;
-    scanf("%d", &t);
+    long long t;
+    scanf("%lld", &t);
+read:
     while (t--)
     {
-        int n;
-        scanf("%d", &n);
-        vector<int> v(n);
-        for (int i = 0; i < n; i++)
-            scanf("%d", &v[i]);
+        long long n;
+        scanf("%lld", &n);
+        long long arr[n];
+        for (long long i = 0; i < n; i++)
+            scanf("%lld", &arr[i]);
 
-        int i = 0, j = n - 1;
-        if (v.size() > 1)
+        sort(arr, arr + n);
+        for (long long i = 1; i < n; i++)
         {
-            int count = 0;
-            while (i < j)
-            {
-                if (abs(v[i] - v[j]) <= 1)
-                {
-                    count++;
-                    j--;
-                }
-                else
-                {
-                    i++;
-                }
-            }
-            if (v.size() - count == 1)
-            {
-                printf("YES\n");
-            }
-            else
+            if (arr[i] - arr[i - 1] > 1)
             {
                 printf("NO\n");
+                goto read;
             }
         }
-        else
-        {
-            printf("YES\n");
-        }
+        printf("YES\n");
     }
+
     return 0;
 }
