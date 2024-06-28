@@ -21,7 +21,6 @@ int main()
         sort(arr_2, arr_2 + n);
         int i = 0, j = n - 1, sum = 0;
         for (int z = 0; z < n; z++)
-        // while (k--)
         {
 
             if (arr_1[i] < arr_2[j] && k > 0)
