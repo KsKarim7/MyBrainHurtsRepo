@@ -2,6 +2,8 @@
 #include <vector>
 #include <algorithm>
 
+// Kadane's algorithm implementation
+
 int maxSubArraySum(std::vector<int> &arr)
 {
     int max_current = arr[0];
