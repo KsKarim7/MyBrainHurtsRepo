@@ -9,21 +9,26 @@ int main()
         int a, b, c;
         cin >> a >> b >> c;
         int sum = a + b + c;
-        if (a == b)
+
+        if (c % 2 == 0)
         {
-            if (c % 2 == 0)
+            if (a > b)
             {
-                cout << "Second" << endl;
+
+                cout << "First" << endl;
             }
+
             else
             {
-                cout << "First" << endl;
+
+                cout << "Second" << endl;
             }
         }
         else
         {
-            if (sum - a > sum - b)
+            if (b > a)
             {
+
                 cout << "Second" << endl;
             }
             else
@@ -31,6 +36,19 @@ int main()
                 cout << "First" << endl;
             }
         }
+        // else
+        // {
+        //     cout << "First" << endl;
+        // }
+
+        // if (sum - a > sum - b)
+        // {
+        //     cout << "Second" << endl;
+        // }
+        // else
+        // {
+        //     cout << "First" << endl;
+        // }
     }
     return 0;
 }
