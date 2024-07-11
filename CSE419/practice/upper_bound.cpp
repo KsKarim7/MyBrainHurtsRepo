@@ -1,16 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Problem:
-// https://bit.ly/3ocI0HW
-
-int lower_bound(int arr[], int target, int n)
+int upper_bound(int arr[], int target, int n)
 {
     int low = 0, high = n - 1, ans = n;
     while (low <= high)
     {
-        int mid = (low + high) / 2;
-        if (arr[mid] >= target)
+        int mid = low + (high - low) / 2;
+        if (arr[mid] > target)
         {
             ans = mid;
             high = mid - 1;
@@ -32,6 +29,6 @@ int main()
         cin >> arr[i];
     int target;
     cin >> target;
-    cout << lower_bound(arr, target, n);
+    cout << upper_bound(arr, target, n);
     return 0;
 }
