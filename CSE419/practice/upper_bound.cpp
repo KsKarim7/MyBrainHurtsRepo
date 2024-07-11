@@ -6,7 +6,7 @@ int upper_bound(int arr[], int target, int n)
     int low = 0, high = n - 1, ans = n;
     while (low <= high)
     {
-        int mid = low + (high - low) / 2;
+        int mid = (low + high) / 2;
         if (arr[mid] > target)
         {
             ans = mid;
