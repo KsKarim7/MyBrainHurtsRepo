@@ -15,7 +15,7 @@ void sieve(int n)
                 prime[j] = true; // mark all multiples of i as not prime
             }
         }
-    }
+    } //Nlog(logN) prime harmonic series
     for (int i = 2; i < n; i++)
     {
         if (prime[i] == false)
