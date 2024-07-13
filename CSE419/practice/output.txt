@@ -1,1 +1,1 @@
-Maximum sum of a subarray: 13
+Sum of the subarray with length 3: 16

@@ -37,10 +37,11 @@
 //     }
 //     return ans;
 // }
-// pair<int, int> firstAndLastPosition(vector<int>& arr, int n, int k)
+// pair<int, int> firstAndLastPosition(vector<int> &arr, int n, int k)
 // {
 //     // Write your code here
 //     int lb = lower_bound(arr, n, k);
-//     if(lb == n || arr[lb] != k) return {-1,-1};
-//     return {lb,upper_bound(arr, n, k)-1};
+//     if (lb == n || arr[lb] != k)
+//         return {-1, -1};
+//     return {lb, upper_bound(arr, n, k) - 1};
 // }
