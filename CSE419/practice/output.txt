@@ -1,1 +1,0 @@
-Sum of the subarray with length 3: 16
