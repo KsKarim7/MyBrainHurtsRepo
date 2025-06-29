@@ -1,9 +1,0 @@
-Enter a string: All combinations of the string are: 
-
-A
-AB
-ABC
-AC
-B
-BC
-C
