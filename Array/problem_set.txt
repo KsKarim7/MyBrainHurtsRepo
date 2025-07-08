@@ -1,1 +1,3 @@
-https://leetcode.com/problems/move-zeroes/description/
+1) https://leetcode.com/problems/move-zeroes/description/
+2) https://docs.google.com/document/d/1POagUmn8JhSqpvrNlaSHcP5Y29QT8g8L/edit?tab=t.0
+3) https://docs.google.com/document/d/1GXmViBiGL1vb_DTeWTJjgtsPyV2aUu8S/edit?tab=t.0
